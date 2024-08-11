@@ -130,7 +130,7 @@
                 User = config.services.agl-monitor.user;
                 Group = config.services.agl-monitor.group;
                 WorkingDirectory = "${pkgs.fetchgit {
-                  url = "https://github.com/<YourGitHubUsername>/<YourRepoName>";
+                  url = "https://github.com/agl-monitorwg-lux/agl-monitor";
                   # Optionally, specify a branch or commit
                   # ref = "main";
                   # rev = "abc123";
@@ -156,7 +156,7 @@
                 User = config.services.agl-monitor.user;
                 Group = config.services.agl-monitor.group;
                 WorkingDirectory = "${pkgs.fetchgit {
-                  url = "https://github.com/<YourGitHubUsername>/<YourRepoName>";
+                  url = "https://github.com/agl-monitorwg-lux/agl-monitor";
                   # Optionally, specify a branch or commit
                   # ref = "main";
                   # rev = "abc123";
@@ -181,7 +181,7 @@
                 User = config.services.agl-monitor.user;
                 Group = config.services.agl-monitor.group;
                 WorkingDirectory = "${pkgs.fetchgit {
-                  url = "https://github.com/<YourGitHubUsername>/<YourRepoName>";
+                  url = "https://github.com/agl-monitorwg-lux/agl-monitor";
                   # Optionally, specify a branch or commit
                   # ref = "main";
                   # rev = "abc123";
