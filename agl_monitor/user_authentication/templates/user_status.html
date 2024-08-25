@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>User Status</h2>
+    <p><strong>Login Status:</strong> {% if user.is_authenticated %} Logged In {% else %} Logged Out {% endif %}</p>
+    {% if user.is_authenticated %}
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        {% comment %} print all user groups {% endcomment %}
+        <p><strong>Groups:</strong> {{ user.groups.all }}</p>
+
+        {% comment %} Add a link to the "test_auth_view" with a comment that it should only work if the group "user_intern" is available {% endcomment %}
+        <a href="{% url 'test_auth_view' %}">Test Auth View</a>
+
+    
+    {% else %}
+        <p>You are not logged in.</p>
+    {% endif %}
+
+        {% comment %} Implement Force ReAuth button as form with csrf token{% endcomment %}
+        
+        
+</div>
+{% endblock content %}

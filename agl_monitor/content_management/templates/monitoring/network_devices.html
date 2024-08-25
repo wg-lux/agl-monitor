@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Network Devices</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>IP Address</th>
+            </tr>
+        </thead>
+        <tbody id="networkDevicesTable">
+            {% for device in devices %}
+            <tr>
+                <td>{{ device.name }}</td>
+                <td>{{ device.ip }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // JavaScript to handle dynamic content or updates if needed in the future
+    // Currently, the table is rendered server-side; no need for JS unless adding interactivity
+</script>
+{% endblock %}

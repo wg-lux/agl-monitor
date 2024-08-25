@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block content %}
+<!-- Header Section -->
+<div class="p-5 text-center bg-image" style="background-image: url('{% static 'images/banner.webp' %}'); height: 400px;">
+        <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+            <h1 class="mb-3">Innovating GI Endoscopy Through Digitalization</h1>
+            <h4 class="mb-4">Bridging the Digital and Analogue Worlds for Enhanced Patient Care and Research Quality</h4>
+            <!-- <a href="#register" class="btn btn-outline-light btn-lg" role="button">Stay Informed</a> -->
+        </div>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<section class="container py-5">
+    <h2 class="mb-4">Our Mission</h2>
+    <p>Briefly introducing our research group, founded in 2023, we are a small yet ambitious team committed to significantly impacting healthcare through digitalization, with a focus on GI endoscopy. Our mission is to enhance patient care and research quality by integrating advanced digital solutions into everyday medical practices.</p>
+    {% comment %} <img src="{% static 'images/team-or-mission-infographic.jpg' %}" class="img-fluid" alt="Our Team or Mission Infographic"> {% endcomment %}
+</section>
+
+<!-- Our Research Section -->
+<section class="container py-5">
+    <h2 class="mb-4">Our Focus</h2>
+    <p>Our research is dedicated to the application of digitalization in healthcare, particularly in GI endoscopy. We aim to improve patient care and the quality of research by seamlessly integrating digital solutions, thereby enhancing the effectiveness and efficiency of medical practices.</p>
+    <div class="row">
+        <!-- Icons or small graphics representing technology, healthcare, and patient care -->
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/ai_icon_detailed.webp' %}" class="img-fluid" alt="Technology Icon" width="100%" height="auto">
+            <p class="mt-2">Technology Integration</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/connected-healthcare-icon-detailed.webp' %}" class="img-fluid" alt="Healthcare Icon" width="100%" height="auto">
+            <p class="mt-2">Enhanced Healthcare</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/improved-patient-care-icon-detailed.webp' %}" class="img-fluid" alt="Patient Care Icon" width="100%" height="auto">
+            <p class="mt-2">Improved Patient Care</p>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section class="container py-5">
+    <h2 class="mb-4">Featured Projects</h2>
+    
+    <!-- ColoReg Pilot Study -->
+    <div class="mb-5">
+        <h3>Pioneering Precision in Colorectal Cancer Screening</h3>
+        <p>Overview of the ColoReg Pilot study, its objectives, and its importance in the context of the EndoReg Project. Highlighting any early findings or anticipated impacts.</p>
+        {% comment %} <img src="{% static 'images/coloreg-study-visual.jpg' %}" class="img-fluid" alt="ColoReg Study Visual"> {% endcomment %}
+    </div>
+    
+    <!-- G Play -->
+    <div class="mb-5">
+        <h3>Revolutionizing GI Endoscopy Learning</h3>
+        <p>Introduction to G Play, an online learning platform designed to enhance the training and skills of healthcare professionals in GI endoscopy.</p>
+        {% comment %} <img src="{% static 'images/g-play-platform-screenshot.jpg' %}" class="img-fluid" alt="G Play Platform Screenshot"> {% endcomment %}
+    </div>
+</section>
+
+<!-- Call to Action: Register for Updates -->
+<section class="container py-5" id="register">
+    <h2 class="mb-4">Register for Updates</h2>
+    <p>Coming Soon</p>
+    <!-- <form> -->
+        <!-- <div class="mb-3"> -->
+            <!-- <label for="name" class="form-label">Name</label> -->
+            <!-- <input type="text" class="form-control" id="name" placeholder="Your Name"> -->
+        <!-- </div> -->
+        <!-- <div class="mb-3"> -->
+            <!-- <label for="email" class="form-label">Email</label> -->
+            <!-- <input type="email" class="form-control" id="email" placeholder="Your Email"> -->
+        <!-- </div> -->
+        <!-- <div class="mb-3"> -->
+            <!-- <label for="profession" class="form-label">Profession (Optional)</label> -->
+            <!-- <input type="text" class="form-control" id="profession" placeholder="Your Profession"> -->
+        <!-- </div> -->
+        <!-- <button type="submit" class="btn btn-primary">Sign Up Now</button> -->
+    <!-- </form> -->
+</section>
+{% endblock content %}

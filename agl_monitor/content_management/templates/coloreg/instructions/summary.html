@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="py-5">
+        <h1 class="mb-4">Study Overview</h1>
+
+        <section class="mb-5">
+            <h2>Primary Study Goal</h2>
+            <p>Our primary goal is to collect colonoscopy videos and reports, including histopathology reports. This also encompasses related unplanned and planned follow-up colonoscopies within 3 and 12 months, respectively. We specifically focus on polyps larger than 10 mm to evaluate macroscopic and microscopic resection success rates and complication rates.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2>Secondary Study Goal</h2>
+            <p>The anonymized data collected will serve multiple purposes: evaluating the feasibility of an ongoing register, enhancing a learning platform, improving structured colonoscopy reporting, and training AI systems for comprehensive and structured reporting support.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2>Study Hardware</h2>
+            <ul>
+                <li>GPU-enabled Laptop</li>
+                <li>SDI compatible recording device (Atomos Ninja Ultra + Atomos Connect) with a 1 Tb portable SSD for recording and SDI cable</li>
+                <li>5 Tb Study HDD</li>
+            </ul>
+        </section>
+
+        <section class="mb-5">
+            <h2>Video Recording</h2>
+            <p>Ensure that the patient's name, birthdate, and examination date are visible on the screen. Depending on the endoscopy processor, inputs may be made via touch screens or an external keyboard connected to a USB port on the device.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2>Reports</h2>
+            <p>Reports should be in PDF format with text overlay, allowing text selection to verify the presence of an overlay.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2>Data Transfer</h2>
+            <p>Log in with the "center-user" account, navigate to the "Study Center" icon on the desktop or open a browser at "localhost:8000". Click the "Connect to Data DropOff" button, ensure it turns green, and then drag and drop videos and reports into the "DropOff Folder" on the desktop.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2>Data Validation</h2>
+            <p>Work in Progress.</p>
+        </section>
+    </div>
+{% endblock %}

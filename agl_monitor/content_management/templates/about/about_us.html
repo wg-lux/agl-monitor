@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4">About Us</h1>
+    <p>Welcome to the forefront of innovation in healthcare digitalization, a dedicated pursuit led by the Gastroenterology Department at the University Hospital Würzburg. Our team is driven by the vision of bridging the crucial gaps between digital advancements and clinical practice, ensuring a seamless integration that enhances both the quality of care and research in the medical field.</p>
+    
+    <h2 class="mt-5 mb-3">Our Mission</h2>
+    <p>In an era where technology shapes the future of medicine, our research group, under the expert guidance of Prof. Dr. Alexander Meining and Dr. Thomas J. Lux, is committed to applying digitalization in healthcare. We focus on developing and implementing cutting-edge solutions that facilitate a transition from traditional methodologies to more efficient, accurate, and patient-centered approaches. Our work is dedicated to not just advancing the field of gastroenterology but also setting new standards in patient care and clinical research.</p>
+    
+    <h2 class="mt-5 mb-3">The Team</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                {% comment %} <img src="{% static 'path/to/prof_meining_image.jpg' %}" class="card-img-top" alt="Prof. Dr. Alexander Meining"> {% endcomment %}
+                <div class="card-body">
+                    <h5 class="card-title">Prof. Dr. Alexander Meining</h5>
+                    <p class="card-text">Head of the Gastroenterology Department: A visionary leader, Prof. Meining spearheads our efforts with unparalleled expertise and a commitment to excellence in medical innovation.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                {% comment %} <img src="{% static 'path/to/dr_lux_image.jpg' %}" class="card-img-top" alt="Dr. Thomas J. Lux"> {% endcomment %}
+                <div class="card-body">
+                    <h5 class="card-title">Dr. Thomas J. Lux</h5>
+                    <p class="card-text">Head of Research Group: Dr. Lux's profound knowledge and innovative research strategies drive our group towards groundbreaking discoveries in digital healthcare.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Yvonne Josef</h5>
+                    <p class="card-text">Study Coordination: With meticulous attention to detail, Yvonne ensures our research projects are conducted smoothly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Katja Herold</h5>
+                    <p class="card-text">Doctoral Student - Structured Colonoscopy Reporting: Katja's dedication and innovative research contribute significantly to our understanding and application of digital solutions in healthcare.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Max Hild and Falk Pulsmeyer</h5>
+                    <p class="card-text">Research Assistants: Our research assistants are the backbone of our projects, providing vital support that enables the translation of theoretical concepts into practical solutions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add other team members here following the same structure -->
+    </div>
+    
+    <h2 class="mt-5 mb-3">Our Research Scope</h2>
+    <p>Our focus lies in the applied digitalization of healthcare, aiming to improve the quality of care and research. We are dedicated to overcoming the challenges posed by the gaps between digital and analogue worlds in medicine. Through our innovative projects, we strive to enhance patient outcomes, streamline clinical processes, and foster a deeper understanding of gastroenterological conditions.</p>
+</div>
+{% endblock %}
