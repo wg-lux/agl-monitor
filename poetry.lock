@@ -707,13 +707,13 @@ files = [
 
 [[package]]
 name = "endoreg-db"
-version = "0.3.11"
+version = "0.4.0"
 description = "EndoReg Db Django App"
 optional = false
 python-versions = "<4.0,>=3.11"
 files = [
-    {file = "endoreg_db-0.3.11-py3-none-any.whl", hash = "sha256:953ddd3a3a9972aee071724b0a6510a0751433a88c534e143efe1605d3424bfd"},
-    {file = "endoreg_db-0.3.11.tar.gz", hash = "sha256:0d98d30d4fa2678d16e08668ea94de4897937356faf7eca0f623650d2ffc23a2"},
+    {file = "endoreg_db-0.4.0-py3-none-any.whl", hash = "sha256:649954d6656bcc4e34e42393a37c01a99cec845e76dcbe03087bd172257b1566"},
+    {file = "endoreg_db-0.4.0.tar.gz", hash = "sha256:762ee0ac6ef1e6d12a04a76585bb617c35349f0e51bba5ab7c823f3d40ba986d"},
 ]
 
 [package.dependencies]
@@ -1884,4 +1884,4 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "1e15e5a4acfea67941c354591e6e44bc4fe080804a0b49b92db3718177199eac"
+content-hash = "bafee509ee46b403bf932441671b231e0de5d11e2dcd4a7519e4deea135e1eeb"
